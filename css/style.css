@@ -1,0 +1,444 @@
+/*=================GOOGLE FONTS==================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/*=================GOOGLE FONTS==================*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol{
+    list-style-type: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/*================navbar part css start===============*/
+
+
+.navbar{
+   padding: 40px 0; 
+}
+
+.navbar ul.navbar-nav li.nav-item a{
+    padding-left: 55px;
+}
+
+.navbar ul.navbar-nav li.nav-item a.nav-link{
+   font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #222222;
+    transition: all linear 0.3s;
+}
+
+.navbar ul.navbar-nav li.nav-item a.nav-link:hover{
+    color: #19ade3;
+}
+
+/*================banner part css start==================*/
+
+.banner-area
+{
+    padding-bottom: 70px;
+}
+
+.banner
+{
+    background: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.banner-text
+{
+    text-align: center;
+}
+
+.banner-text h2
+{
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    color: #ffffff;
+    padding-bottom: 11px;
+    padding-top: 55px;
+}
+
+.banner-text h2:before
+{
+    position: absolute;
+    content: '';
+    width: 600px;
+    height: 2px;
+    background: #15a4fa;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner-text h3
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    padding-top: 40px;
+}
+
+.banner-btn a
+{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    border: 1px solid #15a4fa;
+    padding: 20px 35px;
+    transition: all linear 0.3s;
+}
+
+.banner-btn
+{
+    padding-top: 85px;
+}
+.banner-btn a:hover{
+    background: black;
+    color: #15a4fa;
+}
+
+
+.banner-icon
+{
+    padding-top: 200px;  
+}
+
+.banner-icon a
+{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*==============icon part css start============*/
+
+.icon-text 
+{
+    text-align: center;
+}
+
+.icon-text h2
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #2d3950;
+    padding-top: 2px;
+}
+
+
+.icon-text p
+{
+     font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999999;
+    padding-top: 5px;
+}
+
+.main-icon
+{
+    text-align: center;
+    padding-top: 180px;
+    padding-bottom: 70px;
+}
+
+.icon a
+{
+    font-size: 50px;
+    border: 1px;
+    padding: 20px 30px;
+    background: linear-gradient(to right,rgb(0, 134, 216),rgb(99, 188, 242));
+    color: #ffffff;
+}
+
+
+.text h2
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #2d3950;
+    padding-top: 30px;
+}
+.text p
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999; 
+    padding: 0 20px;
+    line-height: 22px;
+}
+
+/*=======================service part css start==================*/
+
+
+.service-text
+{
+    text-align: center;
+}
+
+.service-text h2
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    color: #2d3950; 
+}
+
+.service-text p
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #909090; 
+}
+
+.main-ser
+{
+    padding-bottom: 70px;
+}
+
+.ser-img
+{
+    position: relative;
+    margin-top: 30px;
+}
+
+.ser-img img
+{
+    width: 100%;
+}
+
+
+
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(21, 151, 230, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear 0.3s;
+}
+
+.ser-img:hover .overlay
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.active
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay-icon
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.overlay-icon a
+{
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 15px 15px;
+    background: #15a4fa;
+    transition: all linear 0.3s;
+}
+
+.overlay-icon a:hover{
+    background: red; 
+}
+
+.overlay-icon i
+{
+    color: #ffffff;
+}
+
+/*==========================contact part css start==============*/
+
+
+.contact-img
+{
+    background: url(../images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    position: relative;
+}
+
+.contact-overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(45, 57, 77, 0.90);
+}
+
+.contact-text
+{
+    text-align: center;
+}
+
+.contact-text h2
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 41px;
+    color: #ffffff; 
+    padding-top: 75px;
+}
+.contact-text p
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    padding-top: 20px;
+}
+
+.form 
+{
+    padding-top: 50px;
+}
+
+.form input
+{
+    background: transparent;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.form2 input
+{
+    background: transparent;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    padding: 20px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    padding-bottom: 120px;
+}
+
+
+.contact-btn
+{
+    padding-top: 50px;
+}
+
+.contact-btn a
+{
+    text-decoration: none;
+    border: 1px solid #15a4fa;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+
+
+.contact-btn a:hover{
+    background: black;
+    color: #15a4fa;
+}
+
+/*===========copyright part css start=============*/
+
+
+.copy
+{
+    padding: 35px 0;
+}
+
+.copy-text h2
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+}
+
+.copy-icon a
+{
+    text-decoration: none;
+    border: transparent;
+    border-radius: 5px;
+    padding: 15px 15px;
+    background: #15a4fa;
+    margin-left: 5px;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+
+
+.copy-icon a:hover{
+    background: #10ff50;
+    color: #9da55b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
